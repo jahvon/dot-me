@@ -1,0 +1,163 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    background-color: #fff;
+    height: 100%;
+}
+
+@font-face {
+    font-family: 'peace_sans';
+    src: url('../fonts/Peace Sans.otf');
+    src:  url('../fonts/Peace Sans Webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a:link {
+    color: #fff;
+}
+
+a:visited {
+    color: #fff;
+}
+
+a:hover {
+    color: #FFFF00;
+}
+
+a:active {
+    color: #fff;
+}
+
+button {
+    outline: none;
+  }
+
+.container-fluid {
+    padding: 2%;
+    height: 100%;
+}
+
+#center-box {
+    background-color: #000;
+    color: #fff;
+    padding: 2%;
+}
+
+#content {
+    width: 100%;
+}
+
+#first_name {
+    color: #FFFF00;
+    font-family: 'peace_sans', sans-serif;
+    font-size: 6vw;
+    text-transform: uppercase;
+    -webkit-animation: color-change 20s infinite linear;
+    -moz-animation: color-change 20s infinite linear;
+    -o-animation: color-change 20s infinite linear;
+    -ms-animation: color-change 20s infinite linear;
+    animation: color-change 20s infinite linear;
+    width: 100%;
+    text-align: center;
+    margin-bottom: -2.5vw;
+}
+
+#last_name {
+    font-size: 5vw;
+    display: block;
+    font-family: 'peace_sans', sans-serif;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1vw;
+}
+
+@-webkit-keyframes color-change {
+    12.5% {color: #FFFF00;}
+    25% {color: #7FFF00;}
+    37.5% {color: #41e3ff;}
+    50% {color: #001aff;}
+    62.5% {color: #001aff;}
+    75% {color: #41e3ff;}
+    87.5% {color: #7FFF00;}
+    100% {color: #FFFF00;}
+}
+@-moz-keyframes color-change {
+    12.5% {color: #FFFF00;}
+    25% {color: #7FFF00;}
+    37.5% {color: #41e3ff;}
+    50% {color: #001aff;}
+    62.5% {color: #001aff;}
+    75% {color: #41e3ff;}
+    87.5% {color: #7FFF00;}
+    100% {color: #FFFF00;}
+}
+@-ms-keyframes color-change {
+    12.5% {color: #FFFF00;}
+    25% {color: #7FFF00;}
+    37.5% {color: #41e3ff;}
+    50% {color: #001aff;}
+    62.5% {color: #001aff;}
+    75% {color: #41e3ff;}
+    87.5% {color: #7FFF00;}
+    100% {color: #FFFF00;}
+}
+@-o-keyframes color-change {
+    12.5% {color: #FFFF00;}
+    25% {color: #7FFF00;}
+    37.5% {color: #41e3ff;}
+    50% {color: #001aff;}
+    62.5% {color: #001aff;}
+    75% {color: #41e3ff;}
+    87.5% {color: #7FFF00;}
+    100% {color: #FFFF00;}
+}
+@keyframes color-change {
+    12.5% {color: #FFFF00;}
+    25% {color: #7FFF00;}
+    37.5% {color: #41e3ff;}
+    50% {color: #001aff;}
+    62.5% {color: #001aff;}
+    75% {color: #41e3ff;}
+    87.5% {color: #7FFF00;}
+    100% {color: #FFFF00;}
+}
+
+#navigation {
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.custom-btn {
+    margin: 1vw;
+    font-size: 1.3vw;
+    padding: .1vw;
+    background-color: #000;
+    color: #fff;
+}
+
+#social {
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1vw;
+}
+
+.social-icon {
+    margin-right: 1vw;
+    margin-left: 1vw;
+}
+
+.modal-close {
+    font-size: 10px;
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+    float: right;
+    color: #858585;
+}
