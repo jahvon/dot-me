@@ -1,5 +1,5 @@
 $(function(){  
-    $('#content').hide().fadeIn(1000);
+    $('#content').hide().fadeIn(2000);
 });
 
 $(".coming-soon").click(function(){

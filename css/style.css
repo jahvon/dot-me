@@ -161,3 +161,19 @@ button {
     float: right;
     color: #858585;
 }
+
+@media screen and (max-width: 500px) {
+    #first_name {
+        font-size: 12vw;
+        margin-bottom: -5vw;
+    }
+    #last_name {
+        font-size: 10vw;
+    }
+    .custom-btn {
+        font-size: 3.6vw;
+    }
+    #social {
+        font-size: 3.5vw;
+    }
+  }
