@@ -2,61 +2,158 @@
 
 <html lang="en">
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135993444-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-135993444-1');
+  </script>
   <meta charset="utf-8">
 
   <title>Jahvon Dockery</title>
-  <meta name="description" content="Index of Jahvon Dockery's personal programming projects.">
+  <meta name="description" content="Just another software engineer based in Boston, MA. Learn more about me!">
   <meta name="author" content="Jahvon Dockery">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Chivo|Muli" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/onepage-scroll.css">
 </head>
 
 <body>
-  <div class="container-fluid d-flex">
-    <div class="col-md-12 d-flex justify-content-center align-self-stretch" id="center-box">
-      <div class="align-self-center" id="content">
-        <div class="row" id="intro">
-          <span id="first_name">Jahvon</span>
-          <span id="last_name">Dockery</span>
-        </div>
+  <div class="main">
+    <section class="intro" id="1">
+      <div class="section-container">
+        <span id="greeting">hi, my name is</span>
+        <span id="name">jahvon dockery.</span>
+      </div>
+    </section>
     
-        <div class="row" id="navigation">
-          <a href="#"><button class="btn custom-btn coming-soon">blah</button></a>
-          <a href="#"><button class="btn custom-btn coming-soon">dash</button></a>
-          <a href="#"><button class="btn custom-btn coming-soon">octupi</button></a>
-          <a href="#"><button class="btn custom-btn coming-soon">indio</button></a>
-        </div>
-    
-        <div class="row" id="social">
-          <a href="mailto:email@jahvon.me"><i class="fas fa-envelope social-icon fa-fw"></i></a> 
-          <a href="https://github.com/jahvon"><i class="fab fa-github-alt social-icon fa-fw"></i></a>
-          <a href="https://www.linkedin.com/in/jahvon/"><i class="fab fa-linkedin social-icon fa-fw"></i></a>
+    <section class="about" id="2">
+      <div class="section-container">
+        <img src="img/picture.png" id="pic" class="rounded-circle">
+        <h1>about me.</h1>
+        <span id="school">University of Pittsburgh '18, <i>BS in Computer Science & Business Administration</i></span>
+        <span id="short-desc">
+          I am a software engineer currently based in Boston, MA with a focus on building (and occasionally making attempts at designing) high-quality websites and applications. I am currently working as a full stack engineer at <a href="https://www.panoramaed.com">Panorama Education</a>.
+        </span>
+        <span id="skill-head">interests & skills</span>
+        <div id="skill-tags">
+          <span class="badge">python</span>
+          <span class="badge">ruby</span>
+          <span class="badge">java</span>
+          <span class="badge">sql</span>
+          <span class="badge">html & css</span>
+          <span class="badge">javascript</span>
+          <span class="badge">docker</span>
+          <span class="badge">data science</span>
+          <span class="badge">microcontrollers</span>
+          <span class="badge">ux & design</span>
+          <span class="badge">full stack web dev</span>
+          <span class="badge">android app dev</span>
+          <span class="badge">data analytics</span>
+          <span class="badge">project management</span>
         </div>
       </div>
-    </div>
-</div>
+    </section>
 
-<div class="modal fade" id="messageModal" tabindex="-1" role="dialog" aria-labelledby="messageModal" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-body">
-          Sorry :/ this doesn't work right now but will soon! Please come back at another time.
+    <section class="projects" id="3">
+      <div class="section-container">
+        <h1>my projects.</h1>
 
-          <span class="modal-close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">ok, fine :(</span>
-          </span>
+        <div class="card-columns">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Dash</h5>
+              <p class="card-text">Personal finances management system. Build with Python, Flask, Javascript, React, HTML & CSS.
+                Used Plaid & Google OAuth APIs.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="img/indio.png" alt="Indio">
+            <div class="card-body">
+              <h5 class="card-title">Indio</h5>
+              <p class="card-text">Recommendation based music streaming service created for independent music artist. Built with Ruby, Sinatra, HTML & CSS, Javascript/JQuery. Used Amazon AWS, Stripe, and Rcmmndr APIs.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="img/stationapp.png" alt="Station App">
+            <div class="card-body">
+              <h5 class="card-title">Station App</h5>
+              <p class="card-text">Application designed to help improve companies' marketing strategies through social media campaigns. Build with Ruby, Sinatra, HTML & CSS, Javascript/JQuery. Used Facebook, Twitter, and Intragram APIs.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Octupi</h5>
+              <p class="card-text">Productivity management application. Build with Python, Django, HTML & CSS.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="img/roomhub.png" alt="Room Hub">
+            <div class="card-body">
+              <h5 class="card-title">Room Hub</h5>
+              <p class="card-text">Android mobile app for management household responsibility between roommates. Build with Android Studio, Java, XML. Used Google Firebase.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
+
+    <section class="contact" id="4">
+      <div class="section-container">
+        <h1>contact me.</h1>
+        <a href="mailto:email@jahvon.me" class="social-link"><i class="fas fa-envelope fa-fw"></i> email me</a>
+        <a href="https://github.com/jahvon" class="social-link"><i class="fab fa-github-alt fa-fw"></i> check out my github</a>
+        <a href="https://www.linkedin.com/in/jahvon/" class="social-link"><i class="fab fa-linkedin fa-fw"></i> connect with me on linkedin</a>
+      </div>
+    </section>
+  </div>
+
+  <div class="row" id="navigation">
+    <a href="#2" id="about" class="nav_link">about</a>
+    <a href="#3" id="projects" class="nav_link">projects</a>
+    <a href="#4" id="contact" class="nav_link">contact</a>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  <script src="js/animation.js"></script>
+  <script src="js/jquery.onepage-scroll.min.js"></script>
+  <script src="js/jquery.onepage-scroll.min.js"></script>
+  <script>
+    $(".main").onepage_scroll({
+        sectionContainer: "section",
+        easing: "linear",
+        animationTime: 1000,            
+        pagination: false,                
+        updateURL: false,               
+        beforeMove: function (index) { },  
+        afterMove: function (index) { },  
+        loop: false,                     
+        keyboard: true,                 
+        responsiveFallback: false,        
+        direction: "vertical"           
+      });
+    
+    $("#about").click(function () {
+      $(".main").moveTo(2);
+    });
+
+    $("#projects").click(function () {
+      $(".main").moveTo(3);
+    });
+
+    $("#contact").click(function () {
+      $(".main").moveTo(4);
+    });
+  </script>
 </body>
 </html>

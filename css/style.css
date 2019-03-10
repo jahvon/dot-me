@@ -1,179 +1,161 @@
+/* Body */
 html {
     height: 100%;
 }
 
 body {
-    font-family: 'Muli', sans-serif;
-    background-color: #fff;
+    font-family: Helvetica,Arial,sans-serif;
+    background-color: #14213D;
+    color: #fff;
     height: 100%;
 }
 
-@font-face {
-    font-family: 'peace_sans';
-    src: url('../fonts/Peace Sans.otf');
-    src:  url('../fonts/Peace Sans Webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+a:link, a:visited, a:hover, a:active {
+    color: #777777;
+    text-decoration: none;
 }
 
-a:link {
-    color: #fff;
+h1 {
+    font-weight: bold;
+    color: #000;
 }
 
-a:visited {
-    color: #fff;
+/* Navigation */
+#navigation:after {
+  background: linear-gradient(to right, #14213D 25%,#FCA311 25%, #FCA311 50%, #E5E5E5 50%, #E5E5E5 75%, #FFFFFF 75%);
+  position: absolute;
+  content: '';
+  height: 5px;
+  right: 0;
+  left: 0;
+  top: 0;
 }
 
-a:hover {
-    color: #FFFF00;
-}
-
-a:active {
-    color: #fff;
-}
-
-button {
-    outline: none;
-  }
-
-.container-fluid {
-    padding: 2%;
-    height: 100%;
-}
-
-#center-box {
-    background-color: #000;
-    color: #fff;
-    padding: 2%;
-}
-
-#content {
+/* Sections */
+#greeting {
+    font-size: 1em;
     width: 100%;
+    font-weight: bold;
+    margin-bottom: -1em;
 }
 
-#first_name {
-    color: #FFFF00;
-    font-family: 'peace_sans', sans-serif;
-    font-size: 6vw;
-    text-transform: uppercase;
-    -webkit-animation: color-change 20s infinite linear;
-    -moz-animation: color-change 20s infinite linear;
-    -o-animation: color-change 20s infinite linear;
-    -ms-animation: color-change 20s infinite linear;
-    animation: color-change 20s infinite linear;
-    width: 100%;
-    text-align: center;
-    margin-bottom: -2.5vw;
-}
-
-#last_name {
-    font-size: 5vw;
+#name {
+    font-size: 4em;
     display: block;
-    font-family: 'peace_sans', sans-serif;
-    text-transform: uppercase;
     width: 100%;
-    text-align: center;
-    margin-bottom: 1vw;
-}
-
-@-webkit-keyframes color-change {
-    12.5% {color: #FFFF00;}
-    25% {color: #7FFF00;}
-    37.5% {color: #41e3ff;}
-    50% {color: #001aff;}
-    62.5% {color: #001aff;}
-    75% {color: #41e3ff;}
-    87.5% {color: #7FFF00;}
-    100% {color: #FFFF00;}
-}
-@-moz-keyframes color-change {
-    12.5% {color: #FFFF00;}
-    25% {color: #7FFF00;}
-    37.5% {color: #41e3ff;}
-    50% {color: #001aff;}
-    62.5% {color: #001aff;}
-    75% {color: #41e3ff;}
-    87.5% {color: #7FFF00;}
-    100% {color: #FFFF00;}
-}
-@-ms-keyframes color-change {
-    12.5% {color: #FFFF00;}
-    25% {color: #7FFF00;}
-    37.5% {color: #41e3ff;}
-    50% {color: #001aff;}
-    62.5% {color: #001aff;}
-    75% {color: #41e3ff;}
-    87.5% {color: #7FFF00;}
-    100% {color: #FFFF00;}
-}
-@-o-keyframes color-change {
-    12.5% {color: #FFFF00;}
-    25% {color: #7FFF00;}
-    37.5% {color: #41e3ff;}
-    50% {color: #001aff;}
-    62.5% {color: #001aff;}
-    75% {color: #41e3ff;}
-    87.5% {color: #7FFF00;}
-    100% {color: #FFFF00;}
-}
-@keyframes color-change {
-    12.5% {color: #FFFF00;}
-    25% {color: #7FFF00;}
-    37.5% {color: #41e3ff;}
-    50% {color: #001aff;}
-    62.5% {color: #001aff;}
-    75% {color: #41e3ff;}
-    87.5% {color: #7FFF00;}
-    100% {color: #FFFF00;}
+    font-weight: bold;
 }
 
 #navigation {
-    width: max-content;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.custom-btn {
-    margin: 1vw;
-    font-size: 1.3vw;
-    padding: .1vw;
-    background-color: #000;
-    color: #fff;
-}
-
-#social {
-    width: max-content;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 1vw;
-}
-
-.social-icon {
-    margin-right: 1vw;
-    margin-left: 1vw;
-}
-
-.modal-close {
-    font-size: 10px;
-    font-weight: bold;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1em;
     display: block;
-    margin-top: 15px;
-    float: right;
-    color: #858585;
+    text-align: center;
 }
 
+#canvas {
+   position : absolute;
+   top : 0px;
+   left : 0px;
+}
+
+.section-container {
+    top: 50%;
+    transform: perspective(1px) translateY(-50%);
+    position: relative;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.intro {
+    background-color: #14213D;
+    padding-top: 3em;
+}
+
+.about {
+    background-color: #FCA311;
+    padding-top: 3em;
+}
+
+.projects {
+    background-color: #E5E5E5;
+    padding-top: 3em;
+}
+
+.contact {
+    background-color: #FFFFFF;
+    padding-top: 3em;
+}
+
+.nav_link {
+    font-size: .75em;
+    margin: .25vw
+}
+
+/* Elements */
+#pic {
+    height: 20em;
+    position: absolute;
+    right: 5em;
+}
+
+#short-desc {
+    width: 50%;
+    display: block;
+    margin-bottom: 3em;
+    font-size: 1.25em;
+    color: #777;
+}
+
+#school {
+    color: #777;
+}
+
+#skill-head {
+    text-align: right;
+    display: block;
+    margin-right: 25em;
+    margin-left: auto;
+    width: 25em;
+}
+
+#skill-tags {
+    text-align: right;
+    display: block;
+    margin-right: 25em;
+    margin-left: auto;
+    width: 25em;
+}
+
+.badge {
+    background-color: #fff;
+    color: #FCA311;
+}
+
+.social-link {
+    font-size: 1.5em;
+    display: block;
+}
+
+.card-title {
+    color: #000;
+    font-size: 1em;
+}
+
+.card-text {
+    font-size: .75em;
+    color: #000;
+}
+
+/* Mobile */
 @media screen and (max-width: 500px) {
-    #first_name {
-        font-size: 12vw;
-        margin-bottom: -5vw;
+    body {
+        font-size: 5px;
     }
-    #last_name {
-        font-size: 10vw;
-    }
-    .custom-btn {
-        font-size: 3.6vw;
-    }
-    #social {
-        font-size: 3.5vw;
+
+    .card-img-top {
+        height: 0px;
     }
   }
