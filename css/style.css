@@ -18,6 +18,7 @@ a:link, a:visited, a:hover, a:active {
 h1 {
     font-weight: bold;
     color: #000;
+    font-size: 2em;
 }
 
 /* Navigation */
@@ -53,12 +54,6 @@ h1 {
     padding: 1em;
     display: block;
     text-align: center;
-}
-
-#canvas {
-   position : absolute;
-   top : 0px;
-   left : 0px;
 }
 
 .section-container {
