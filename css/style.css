@@ -30,6 +30,7 @@ h1 {
   right: 0;
   left: 0;
   top: 0;
+  margin:
 }
 
 /* Sections */
@@ -54,6 +55,7 @@ h1 {
     padding: 1em;
     display: block;
     text-align: center;
+    margin: 0;
 }
 
 .section-container {
@@ -147,10 +149,75 @@ h1 {
 /* Mobile */
 @media screen and (max-width: 500px) {
     body {
-        font-size: 5px;
+        font-size: 12px;
+    }
+
+    .nav_link {
+        margin: .5em;
+    }
+
+    #name {
+        line-height: 1em;
+    }
+
+    #pic {
+        height: 14em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2em;
+        display: block;
+        position: static;
+        right: 0em;
+    }
+
+    .section-head {
+        text-align: center;
+    }
+
+    #school {
+        font-size: .87em;
+        display: block;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    #short-desc {
+        width: 100%;
+        text-align: center;
+    }
+
+    #skill-head, #skill-tags {
+        margin-right: 0;
+        width: 100%;
+        text-align: center;
     }
 
     .card-img-top {
         height: 0px;
     }
+
+    .card {
+        margin-bottom: .5em;
+    }
+
+    .card-body {
+        padding: 1em;
+    }
+
+    .card-title {
+        margin-bottom: .2em;
+    }
   }
+
+/* Orientation lock */
+@media screen and (orientation: landscape) {
+  html {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+}
